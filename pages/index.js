@@ -1,131 +1,72 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
-
+// import styles from '../styles/Home.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
+import Footer from "/src/components/Footer";
+import pic1 from "../public/assets/image/1.png"
+import pic2 from "../public/assets/image/2.png"
+import pic3 from "../public/assets/image/3.png"
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="d-flex flex-column min-vh-100">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Parallelth Studio</title>
       </Head>
 
-      <main>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <section className="mainSection" style={{ fontFamily: 'Inter', overflowX: "hidden" }}>
+        <div className="container h-100" style={{ marginTop: "15rem", marginBottom: "15rem" }}>
 
-        <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
         </div>
-      </main>
+      </section>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
-      </footer>
+      <section className="d-flex my-5" style={{ fontFamily: 'Inter', paddingLeft: "8%", paddingRight: "8%" }}>
+        <div className='col flex-column'>
+          <h1 style={{ color: "#3B3B3B", fontFamily: "Anton", fontSize: "50px" }} className='pb-2'>PARALLELTH: What is it?</h1>
+          <p className='pt-4' style={{ fontFamily: "Prompt", fontWeight: "500", lineHeight: "35px" }}> Our company is a dynamic and innovative technology company specializing in the development of cutting-edge games and web applications. With a passion for creativity and technology, we strive to deliver exceptional digital experiences that captivate and engage users. Our team of skilled and creative game developers works tirelessly to bring immersive and entertaining gaming experiences to life. Whether it's mobile, console, or PC gaming, we leverage the latest technologies to create games that resonate with diverse audiences.</p>
+        </div>
+        <div className='col '>
+          <div className='py-4' style={{ marginLeft: "45%", marginRight: "5%", paddingLeft: "5%", paddingRight: "5%", marginTop: "-200px", zIndex: "auto", position: "relative", background: "#2D2D2D", color: "white" }}>
+            <p className='py-3' style={{ fontFamily: "Anton", fontSize: "60px", textAlign: "center" }}>PARALLELTH</p>
+            <p style={{ textAlign: "center", fontFamily: "Prompt", fontWeight: "300", lineHeight: "35px" }}>We thrive on innovation and creativity. Our game development team pushes the boundaries of imagination, creating unique and memorable gaming experiences. Simultaneously, our web development team crafts solutions that seamlessly blend aesthetics with functionality.</p>
+          </div>
+        </div>
+      </section>
+      <div className='secondSection'>
+        <section className="d-flex my-5 flex-fill" >
+          <div className='col'>
+            <div className='col pt-5 ' style={{ background: "#2D2D2D", color: "white", minHeight: "820px", rotate: "-90deg",borderRadius:"10px" }}>
+              <h2><span style={{ color: "#3B3B3B", fontWeight: 400, fontSize: "60px", background: "#2D2D2D", color: "#F0F0F0", fontFamily: "Anton" }}>PARALLELTH</span></h2>
 
-      <style jsx>{`
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        footer img {
-          margin-left: 0.5rem;
-        }
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-decoration: none;
-          color: inherit;
-        }
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family:
-            Menlo,
-            Monaco,
-            Lucida Console,
-            Liberation Mono,
-            DejaVu Sans Mono,
-            Bitstream Vera Sans Mono,
-            Courier New,
-            monospace;
-        }
-      `}</style>
+            </div>
 
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family:
-            -apple-system,
-            BlinkMacSystemFont,
-            Segoe UI,
-            Roboto,
-            Oxygen,
-            Ubuntu,
-            Cantarell,
-            Fira Sans,
-            Droid Sans,
-            Helvetica Neue,
-            sans-serif;
-        }
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
+          </div>
+          <div className='col pe-5 pt-5' style={{ color: "#3B3B3B" }}>
+            <div className='d-flex d-grid gap-3 pb-5' style={{ marginLeft: "-90%" }}>
+              <div className='d-flex flex-fill justify-content-end'>
+                <Image src={pic1}></Image>
+              </div>
+
+              <div className='col d-grid gap-3'>
+                <Image src={pic2}></Image>
+                <Image src={pic3}></Image>
+              </div>
+            </div>
+            <div style={{marginLeft:"30%",fontFamily: "Prompt", fontWeight: "500", lineHeight: "35px" }}>
+              <p>Our mission is to redefine digital experiences through innovative game and web development. We are committed to staying at the forefront of technology, delivering products that not only meet but exceed the expectations of our clients and users.</p>
+              <p>For inquiries, collaboration opportunities, or to discuss your project requirements, feel free to reach out to us at our company</p>
+
+            </div>
+          </div>
+        </section>
+
+
+
+        <Footer />
+      </div>
+
+
     </div>
+
+
   );
 }
