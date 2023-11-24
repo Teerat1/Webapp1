@@ -509,12 +509,13 @@ border-radius: 10px;
 }
 
 .mainSection {
+  display: flex;
   position: relative;
   width: 100%;
   height: 100vh;
   height: auto;
   min-height:1000px;
-  background: url("../public/assets/image/BF1.png");
+  background: url("../public/assets/image/BF original.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -523,18 +524,23 @@ border-radius: 10px;
   overflow: hidden
 }
 .mainSection2 {
+  display: flex;
   position: relative;
   width: 100%;
   height: 100vh;
   height: auto;
   min-height:1000px;
-  background: url("../public/assets/image/BF2.png");
+  background: url("../public/assets/image/BF2 empty.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
   justify-content: center;
   overflow: hidden
+}
+.bgx{
+  background: url("../public/assets/image/BF2 empty.png");
+  background-position: bottom;
 }
 
 .secondSection {
@@ -801,6 +807,5 @@ h2 {
 } 
 
 h2 span { 
-   
    padding:0 10px; 
 }

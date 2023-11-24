@@ -8,6 +8,13 @@ import pic2 from "../public/assets/image/2.png"
 import pic3 from "../public/assets/image/3.png"
 import pic22 from "../public/assets/image/22.png"
 import pic33 from "../public/assets/image/33.png"
+import para from "../public/assets/image/para.png"
+import facebook from "../public/assets/image/facebook.png"
+import twitch2 from "../public/assets/image/twitch2.png"
+import twitter2 from "../public/assets/image/twitter2.png"
+import insta2 from "../public/assets/image/insta2.png"
+import youtube2 from "../public/assets/image/youtube2.png"
+import Line from "../public/assets/image/Line.png"
 import { useEffect, useState } from 'react';
 export default function Home() {
   // window.innerWidth,
@@ -51,8 +58,25 @@ export default function Home() {
         if (sect == "a") {
           return (<>
             <section className="mainSection" style={{ fontFamily: 'Inter', overflowX: "hidden" }}>
-              <div className="container h-100" style={{ marginTop: "15rem", marginBottom: "15rem" }}>
+              <div className='d-flex flex-fill flex-column'>
+                <div className="d-flex flex-fill flex-column " style={{ marginTop: "0.5rem" }}>
+                  <div className='m-4 ps-1'>
+                    <Image width={236} height={103} src={para}></Image>
+                  </div>
 
+                </div>
+                <div className='row align-bottom'>
+
+                  <div className='d-flex justify-content-between pb-5' style={{ paddingLeft: "7%", paddingRight: "75%", color: "#F0F0F0", fontFamily: "Anton" }}>
+                    <Image src={twitch2} width={28} height={28} />
+                    <Image src={facebook} width={28} height={28} onClick={() => { window.open("https://www.facebook.com/profile.php?id=100091328092171") }} />
+                    <Image src={twitter2} width={28} height={28} />
+                    <Image src={youtube2} width={28} height={28} />
+                    <Image src={insta2} width={28} height={28} />
+                  </div>
+
+
+                </div>
               </div>
             </section>
 
@@ -105,9 +129,27 @@ export default function Home() {
           return (
             <>
               <section className="mainSection2" style={{ fontFamily: 'Inter', overflowX: "hidden" }}>
-                <div className="container h-100" style={{ marginTop: "15rem", marginBottom: "15rem" }}>
+                <div className='d-flex flex-fill flex-column'>
+                  <div className="d-flex flex-fill flex-column " style={{ marginTop: "0.5rem" }}>
+                    <div className='m-4 ps-1'>
+                      <Image width={236} height={103} src={para}></Image>
+                    </div>
 
+                  </div>
+                  <div className='row align-bottom'>
+
+                    <div className='d-flex justify-content-between pb-4' style={{ paddingLeft: "35%", paddingRight: "35%", color: "#F0F0F0", fontFamily: "Anton" }}>
+                      <Image src={twitch2} width={28} height={28} />
+                      <Image src={facebook} width={28} height={28} onClick={() => { window.open("https://www.facebook.com/profile.php?id=100091328092171") }} />
+                      <Image src={twitter2} width={28} height={28} />
+                      <Image src={youtube2} width={28} height={28} />
+                      <Image src={insta2} width={28} height={28} />
+                    </div>
+
+
+                  </div>
                 </div>
+
               </section>
 
               <section className="d-flex flex-fill mt-5 px-5" style={{ fontFamily: 'Inter' }}>

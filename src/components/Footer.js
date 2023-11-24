@@ -30,9 +30,9 @@ function Footer({vp}) {
         if (vp1 == "a") {
           return (
             <div
-              className=""
+            className="bg-black"
               style={{
-                backgroundColor: "#320B5E",
+                // backgroundColor: "#320B5E",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 backgroundPositionX: "50%",
