@@ -124,7 +124,7 @@ export default function Home() {
                         <Image src={pic1} style={{ width: '100%', height: 'auto' }}></Image>
                       </div>
 
-                      <div className='col d-grid gap-3'>
+                      <div className='d-grid gap-3'>
                         <Image src={pic2} style={{ width: '100%', height: 'auto' }}></Image>
                         <Image src={pic3} style={{ width: '100%', height: 'auto' }}></Image>
                       </div>
