@@ -84,21 +84,21 @@ function Footer({vp}) {
                 <div className="d-flex flex-fill justify-content-center pt-1 ">
                   <span style={{ color: "white", fontFamily: "Anton", margin: "0px", textAlign: "center", fontSize: "24px" }}>PARALLELTH</span>
                 </div>
-                <div className="d-flex flex-fill justify-content-between pt-1 pe-4 me-2">
+                <div className="d-flex flex-fill justify-content-between py-2 pe-4 me-2">
                   <div className="">
-                    <Image src={twitch2} />
+                    <Image src={twitch2} width={28} height={28}/>
                   </div>
                   <div className="">
-                    <Image src={facebook} onClick={()=>{window.open("https://www.facebook.com/profile.php?id=100091328092171")}}/>
+                    <Image src={facebook} width={28} height={28} onClick={()=>{window.open("https://www.facebook.com/profile.php?id=100091328092171")}}/>
                   </div>
                   <div className="">
-                    <Image src={twitter2} />
+                    <Image src={twitter2} width={28} height={28}/>
                   </div>
                   <div className="">
-                    <Image src={youtube2} />
+                    <Image src={youtube2} width={28} height={28}/>
                   </div>
                   <div className="">
-                    <Image src={insta2} />
+                    <Image src={insta2} width={28} height={28}/>
                   </div>
                 </div>
               </div>
