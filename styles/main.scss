@@ -514,13 +514,27 @@ border-radius: 10px;
   height: 100vh;
   height: auto;
   min-height:1000px;
-  background: url("../public/assets/image/BF.png");
+  background: url("../public/assets/image/BF1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
   justify-content: center;
-  overflow: "hidden"
+  overflow: hidden
+}
+.mainSection2 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  height: auto;
+  min-height:1000px;
+  background: url("../public/assets/image/BF2 no_tool.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  justify-content: center;
+  overflow: hidden
 }
 
 .secondSection {

@@ -9,7 +9,7 @@ function Webapp1({ Component, pageProps }) {
             <Head>
                 <title>Parallel Studio</title>
                 <meta name="description" content="Parallel Studio" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 <meta
                     property="og:description"
                     content="Parallel Studio"
