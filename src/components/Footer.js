@@ -8,6 +8,10 @@ import facebook from "../../public/assets/image/facebook.png"
 import twitter from "../../public/assets/image/x.png"
 import insta from "../../public/assets/image/inst.png"
 import youtube from "../../public/assets/image/youtube.png"
+import twitch2 from "../../public/assets/image/twitch2.png"
+import twitter2 from "../../public/assets/image/twitter2.png"
+import insta2 from "../../public/assets/image/insta2.png"
+import youtube2 from "../../public/assets/image/youtube2.png"
 import Image from "next/image";
 import { useEffect, useState } from "react";
 function Footer({vp}) {
@@ -21,14 +25,14 @@ function Footer({vp}) {
   }, [vp])
   
   return (
-    <footer className="footer pt-5">
+    <footer className="footer">
       {(() => {
         if (vp1 == "a") {
           return (
             <div
-              className="bg-black"
+              className=""
               style={{
-                // backgroundColor: "#000",
+                backgroundColor: "#320B5E",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 backgroundPositionX: "50%",
@@ -37,23 +41,23 @@ function Footer({vp}) {
             >
               <div className="d-flex flex-fill py-3">
                 <div className="d-flex flex-fill justify-content-end pt-1 px-5 me-5">
-                  <span style={{ color: "white", fontFamily: "Anton", margin: "0px", textAlign: "center", fontSize: "28px" }}>Company Logo</span>
+                  <span style={{ color: "white", fontFamily: "Anton", margin: "0px", textAlign: "center", fontSize: "28px" }}>PARALLELTH</span>
                 </div>
                 <div className="d-flex flex-fill justify-content-start pt-1">
                   <div className="px-3">
-                    <Image src={twitch} />
+                    <Image src={twitch2} />
                   </div>
-                  <div className="px-3">
+                  <div className="px-3" onClick={()=>{window.open("https://www.facebook.com/profile.php?id=100091328092171")}}>
                     <Image src={facebook} />
                   </div>
                   <div className="px-3">
-                    <Image src={twitter} />
+                    <Image src={twitter2} />
                   </div>
                   <div className="px-3">
-                    <Image src={youtube} />
+                    <Image src={youtube2} />
                   </div>
                   <div className="px-3">
-                    <Image src={insta} />
+                    <Image src={insta2} />
                   </div>
 
 
@@ -67,9 +71,9 @@ function Footer({vp}) {
         } else if (vp1 == "b") {
           return (
             <div
-              className="bg-black"
+              className=""
               style={{
-                // backgroundColor: "#000",
+                backgroundColor: "#320B5E",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 backgroundPositionX: "50%",
@@ -78,29 +82,24 @@ function Footer({vp}) {
             >
               <div className="d-flex flex-fill py-3">
                 <div className="d-flex flex-fill justify-content-center pt-1 ">
-                  <span style={{ color: "white", fontFamily: "Anton", margin: "0px", textAlign: "center", fontSize: "24px" }}>Company Logo</span>
+                  <span style={{ color: "white", fontFamily: "Anton", margin: "0px", textAlign: "center", fontSize: "24px" }}>PARALLELTH</span>
                 </div>
-                <div className="d-flex flex-fill justify-content-between pt-1 pe-5 me-2">
+                <div className="d-flex flex-fill justify-content-between pt-1 pe-4 me-2">
                   <div className="">
-                    <Image src={twitch} />
+                    <Image src={twitch2} />
                   </div>
                   <div className="">
-                    <Image src={facebook} />
+                    <Image src={facebook} onClick={()=>{window.open("https://www.facebook.com/profile.php?id=100091328092171")}}/>
                   </div>
                   <div className="">
-                    <Image src={twitter} />
+                    <Image src={twitter2} />
                   </div>
                   <div className="">
-                    <Image src={youtube} />
+                    <Image src={youtube2} />
                   </div>
                   <div className="">
-                    <Image src={insta} />
+                    <Image src={insta2} />
                   </div>
-
-
-
-
-
                 </div>
               </div>
             </div>
