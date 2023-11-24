@@ -121,7 +121,7 @@ export default function Home() {
                 <section className="d-flex my-5 px-5 flex-fill" >
 
                   <div className='col' style={{ color: "#3B3B3B" }}>
-                    <div className='d-flex d-grid gap-3 pb-5' >
+                    <div className='d-flex pb-5' >
                       <div className='d-flex flex-fill justify-content-end'>
                         {/* <Image src={pic1} style={{ width: '100%', height: 'auto' }}></Image> */}
                       </div>
