@@ -110,7 +110,7 @@ export default function Home() {
                 </div>
               </section>
 
-              <section className="d-flex flex-fill my-5 px-5" style={{ fontFamily: 'Inter' }}>
+              <section className="d-flex flex-fill mt-5 px-5" style={{ fontFamily: 'Inter' }}>
                 <div className='col flex-column'>
                   <h1 style={{ color: "#3B3B3B", fontFamily: "Anton", fontSize: "50px" }} className='pb-2'>PARALLELTH: What is it?</h1>
                   <p className='pt-4' style={{ fontFamily: "Prompt", fontWeight: "500", lineHeight: "35px" }}> Our company is a dynamic and innovative technology company specializing in the development of cutting-edge games and web applications. With a passion for creativity and technology, we strive to deliver exceptional digital experiences that captivate and engage users. Our team of skilled and creative game developers works tirelessly to bring immersive and entertaining gaming experiences to life. Whether it's mobile, console, or PC gaming, we leverage the latest technologies to create games that resonate with diverse audiences.</p>
